@@ -1,34 +1,32 @@
 # Swift
 Simple hello world program in swift
 
-# dependencies
+## Dependencies
 clang, libicu-dev, & git (Linux/Unix)
 
-# building
+## Building
 
-### build and run in macos
-```console 
+### Build and run in MacOS
+```sh 
 swift hello_world.swift 
 ```
 
-### build and run in Linux environment
+### Build and run in Linux environments
 
-#### Install Dependencies
-``` console
+Install Dependencies
+``` sh
 sudo apt-get install clang libicu-dev -y
 wget https://swift.org/builds/swift-4.1.2-release/ubuntu1404/swift-4.1.2-RELEASE/swift-4.1.2-RELEASE-ubuntu14.04.tar.gz
 tar -xvzf swift-4.1.2-RELEASE-ubuntu14.04.tar.gz -C ~/swift
 ```
 
-#### Configuring environment variables
-
-``` console
+Configuring environment variables
+``` sh
 sudo vi ~/.bashrc export PATH=~/swift/swift-4.1.2-RELEASE-ubuntu14.04/usr/bin:$PATH
 ```
 
-
-#### Building & Running
-``` console 
+Build and run
+``` sh 
 swift build
 .build/debug/helloworld-project
  ```
